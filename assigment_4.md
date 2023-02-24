@@ -1,7 +1,5 @@
-assignment 4
+Assignment 4: R markdown ggplot
 ================
-Jiawei
-2023-02-22
 
 ## Instructions: Please read through this before you begin
 
@@ -313,8 +311,17 @@ unemployed persons (`unemploy`), among other variables, in the US from
 1967 to 2015.
 
 ``` r
-##head(economics) %\>% kable()
+head(economics) %>% kable()
 ```
+
+| date       |   pce |    pop | psavert | uempmed | unemploy |
+|:-----------|------:|-------:|--------:|--------:|---------:|
+| 1967-07-01 | 506.7 | 198712 |    12.6 |     4.5 |     2944 |
+| 1967-08-01 | 509.8 | 198911 |    12.6 |     4.7 |     2945 |
+| 1967-09-01 | 515.6 | 199113 |    11.9 |     4.6 |     2958 |
+| 1967-10-01 | 512.2 | 199311 |    12.9 |     4.9 |     3143 |
+| 1967-11-01 | 517.4 | 199498 |    12.8 |     4.7 |     3066 |
+| 1967-12-01 | 525.1 | 199657 |    11.8 |     4.8 |     3018 |
 
 <p>
  
@@ -322,50 +329,21 @@ unemployed persons (`unemploy`), among other variables, in the US from
 
 ##### 3.1 Plot the trend in number of unemployed persons(`unemploy`) though time using the economics dataset shown above. And for this question only, hide your code and only show the plot.
 
-``` r
-## Write your code here
-```
-
+![](assigment_4_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
 <p>
  
 </p>
 
-##### 3.2 Edit the plot title and axis labels of the previous plot
+##### 3.2 Edit the plot title and axis labels of the previous plot appropriately. Make y axis start from 0. Change the background theme to what is shown below.
 
-appropriately. Make y axis start from 0. Change the background theme to
-what is shown below. (Hint: search for help online if needed)
+*Hint: search for help online if needed*
 
-``` r
-## Write your code here
-```
+![](assigment_4_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
+<p>
+ 
+</p>
 
-## R Markdown
+##### 3.3 Can this general trend of rise in unemployed persons be explained by population growth? Use a figure to answer this question.
 
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
-
-``` r
-summary(cars)
-```
-
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
-
-## Including Plots
-
-You can also embed plots, for example:
-
-![](assigment_4_files/figure-gfm/pressure-1.png)<!-- -->
-
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+*Hint: you can plot the trend in unemployment rate instead of the number
+of unemployed persons*
